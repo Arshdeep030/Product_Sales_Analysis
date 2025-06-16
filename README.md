@@ -16,7 +16,7 @@ The dataset includes information such as customer demographics, product details,
 
 The data model follows a star schema with two dimension tables (`dim_customers`, `dim_products`) and one fact table (`fact_sales`).
 
-### 📄 Table: `dim_customers`
+### Table: `dim_customers`
 ```sql
 CREATE TABLE dim_customers (
     customer_key INT,
