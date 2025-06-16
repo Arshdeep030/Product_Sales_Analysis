@@ -1,6 +1,6 @@
-# 🧮 Retail Sales Data Analysis with SQL
+# Retail Sales Data Analysis with SQL
 
-## 📌 Project Overview
+## Project Overview
 
 This project performs a comprehensive analysis of a retail sales dataset using SQL. The goal is to derive valuable business insights by answering a broad range of exploratory, performance, product-based, customer-based, and time-series questions. 
 
