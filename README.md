@@ -6,22 +6,18 @@ This project performs a comprehensive analysis of a retail sales dataset using S
 
 The dataset includes information such as customer demographics, product details, transaction amounts, and order history.
 
----
-
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Database**: MySQL / PostgreSQL (compatible with both)
 - **Language**: SQL (including advanced features like window functions, CTEs, CASE statements)
 - **Tools**: Any SQL IDE (MySQL Workbench, DBeaver, pgAdmin, etc.)
 
----
-
-## 🗂️ Database Schema
+## Database Schema
 
 The data model follows a star schema with two dimension tables (`dim_customers`, `dim_products`) and one fact table (`fact_sales`).
 
 ### 📄 Table: `dim_customers`
-
+```sql
 CREATE TABLE dim_customers (
     customer_key INT,
     customer_id INT,
@@ -34,7 +30,8 @@ CREATE TABLE dim_customers (
     birthdate DATE,
     create_date DATE
 );
-
+```
+```sql
 CREATE TABLE dim_products (
     product_key INT,
     product_id INT,
@@ -48,7 +45,8 @@ CREATE TABLE dim_products (
     product_line VARCHAR(50),
     start_date DATE
 );
-
+```
+```sql
 CREATE TABLE fact_sales (
     order_number VARCHAR(50),
     product_key INT,
@@ -60,7 +58,7 @@ CREATE TABLE fact_sales (
     quantity TINYINT,
     price INT
 );
-
+```
 
 ## Questions Answered in This Project
 
